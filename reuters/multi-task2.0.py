@@ -10,9 +10,9 @@ import dataset
 import datetime
 
 
-size1=200
-size2=500
-size3=200
+size1=100
+size2=100
+size3=100
 size4=1000
 #2.0版使用了新的损失函数
 class Encoder(nn.Module):
@@ -345,7 +345,7 @@ decoder4 = Decoder(size3,size4,11547)
     
 if __name__ == "__main__":    
     printTime()
-    data0_iter,data1_iter,data2_iter,data3_iter,data4_iter,labels_iter=dataset.Reuters(False)
+    data0_iter,data1_iter,data2_iter,data3_iter,data4_iter,labels_iter=dataset.Reuters(True)
     #printTime()
     #raise Exception()
     # Check if the GPU is available
